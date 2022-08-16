@@ -38,8 +38,12 @@ function addFlashcard() {
     }
 
     contentArray.push(flashcard_info);
-    localStorage.setItem('items', JSON.stringify(contentArray));
-    divMaker(contentArray[contentArray.length - 1])
+
+    if (localStorage.setItem.length != 0) {
+      'items', JSON.stringify(contentArray);  
+    }
+
+    divMaker(contentArray[contentArray.length - 1]);
 
 }
 
