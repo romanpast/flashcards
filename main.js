@@ -5,7 +5,7 @@ const answer = document.getElementById('answer');
 let contentArray = localStorage.getItem('items') ?
 JSON.parse(localStorage.getItem('items')) : [];
 
-contentArray.array.forEach(divMaker);
+contentArray.forEach(divMaker);
 
 function divMaker(text) {
     var div = document.createElement('div');
